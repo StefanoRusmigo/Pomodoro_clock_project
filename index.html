@@ -1,0 +1,58 @@
+<!doctype>
+<html>
+
+<head>
+ <meta charset="UTF-8"> 
+<title> Pomodoro Clock</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+<div id="pomodoro">
+<h1>Pomodoro Clock</h1>
+<div id="settings">
+	<div class="section">
+		<h3 class="section_title">Session</h3> 
+		<div class="section_attr">
+			<button class="min_up"><img width=" 20" height="20" src="images/arrow_up.png"></button>
+
+			<span id ="set_min"></span>
+
+			<button class="min_down"><img width=" 20" height="20" src="images/arrow_down.png"></button>
+		</div>
+	</div>
+	<div class="section">
+		<h3 class="section_title">Break</h3> 
+		<div class="section_attr">
+			<button class="break_up"><img width=" 20" height="20" src="images/arrow_up.png"></button>
+			<span id="set_break"></span>
+			<button class="break_down"><img width=" 20" height="20" src="images/arrow_down.png"></button>
+		</div>
+	</div>
+</div>
+<div id="clock">
+	<div id="inner_clock">
+		<div>
+			<button id="play" style="float:left;"><img width="40" height="40" src="images/play.png"></button>
+			<button id="refresh" style="float:right"><img width="40" height="40" src="images/refresh.png"></button>
+		</div>
+		<div class="clear"></div>
+		<div id="main_clock">
+			<h2 id="clock_lbl">Session</h2>
+			<span id="time"></span>
+		</div>
+		<div>
+			<button id="pause" style="float:left;"><img width="40" height="40" src="images/Pause.png"></button>
+			<button id="stop" style="float:right"><img width="40" height="40" src="images/stop.png"></button></div>
+
+	</div>
+</div>
+</div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/pomodoro.js"></script>
+</body>
+</html>
